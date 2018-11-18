@@ -1,0 +1,17 @@
+
+<div  [hidden]="submitted" >
+  <form class="form-container" id="addForm" (ngSubmit)="onSubmit()" >
+    <h4 class="text-center">You can update user to database</h4>
+    <mat-form-field class="myform-field">
+      <input matInput  placeholder="Name"  required [(ngModel)]="user.username" name="name" value="{{user.username}}">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput  placeholder="Age"  required [(ngModel)]="user.age" name="age" value="{{user.age}}">
+    </mat-form-field>
+
+    <button mat-fab color="primary" type="submit" >Submit</button>
+  </form>
+</div>
+
+
